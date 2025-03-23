@@ -1,0 +1,6 @@
+employee_id,first_name,last_name,department,salary,hire_date
+1,"Mahender","Doe","Engineering",1,2021-03-15
+2,"Jane","Smith","Enginee",,NULL
+3,"Michael",NULL," ",70000.00,2019-08-01
+4,NULL,"  ","Engineering",65000.00,2022-01-10
+NULL,"William","Brown","  ",,NULL

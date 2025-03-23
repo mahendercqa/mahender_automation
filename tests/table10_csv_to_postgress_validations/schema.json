@@ -1,0 +1,41 @@
+{
+  "fields": [
+    {
+      "metadata": {},
+      "name": "employee_id",
+      "nullable": true,
+      "type": "integer"
+    },
+    {
+      "metadata": {},
+      "name": "first_name",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "metadata": {},
+      "name": "last_name",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "metadata": {},
+      "name": "department",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "metadata": {},
+      "name": "salary",
+      "nullable": true,
+      "type": "decimal(10,2)"
+    },
+    {
+      "metadata": {},
+      "name": "hire_date",
+      "nullable": true,
+      "type": "date"
+    }
+  ],
+  "type": "struct"
+}

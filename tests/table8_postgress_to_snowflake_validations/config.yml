@@ -1,0 +1,34 @@
+target:
+  type: 'snowflake_database'
+  schema: 'N'
+  cred_lookup: 'snowflake_db'
+  table: 'employee'
+  sql_query: 'N'
+
+source:
+  type: 'database'
+  schema: 'N'
+  cred_lookup: 'postgres'
+  table: 'employee'
+  sql_query: 'Y'
+
+#target:
+#  type: 'database'
+#  schema: 'N'
+#  cred_lookup: 'postgres'
+#  table: 'employee'
+#  sql_query: 'N'
+
+
+validations:
+  count_check:
+    key_col: ['employee_id']
+  duplicate_check:
+    key_col: ['employee_id']
+  uniqueness_check:
+    key_col: ['employee_id','salary']
+  null_check:
+    key_col: [ 'employee_id','salary' ]
+  data_compare_check:
+    key_col: [ 'employee_id']
+

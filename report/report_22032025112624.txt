@@ -1,0 +1,30 @@
+validation_type:schema_check
+status:FAIL
+deatils:[{'source_col_name': 'employee_id', 'source_data_type': 'bigint', 'target_col_name': 'employee_id', 'target_data_type': 'int', 'comparision': 'FAIL'}, {'source_col_name': 'hire_date', 'source_data_type': 'string', 'target_col_name': 'hire_date', 'target_data_type': 'date', 'comparision': 'FAIL'}, {'source_col_name': 'salary', 'source_data_type': 'string', 'target_col_name': 'salary', 'target_data_type': 'decimal(10,2)', 'comparision': 'FAIL'}]
+
+validation_type:count_check
+status:PASS
+deatils:source_count:5 and target_count:5
+
+validation_type:records_only_in_source
+status:PASS
+deatils:[]
+
+validation_type:records_only_in_target
+status:PASS
+deatils:[]
+
+validation_type:duplicate_check
+status:PASS
+deatils:no duplicate records
+
+validation_type:uniqueness_check
+status:FAIL
+deatils:failed_records_preview:[[], [{'salary': None, 'count': 3}]]
+failed_records_count:{'employee_id': 0, 'salary': 1}
+
+validation_type:null_check
+status:FAIL
+deatils:failed_records_preview:[[], [{'salary': None}, {'salary': None}, {'salary': None}]]
+failed_records_count_review:{'employee_id': 0, 'salary': 3}
+

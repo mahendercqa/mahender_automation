@@ -1,0 +1,5 @@
+validation_type:data_compare_check
+status:FAIL
+deatils:failed_records_preview_count:{'first_name': 0, 'last_name': 0, 'department': 0, 'salary': 3, 'hire_date': 2}
+failed_records_count:[[], [], [], [{'employee_id': 1, 'source_salary': Decimal('1.00'), 'target_salary': None, 'status': 'FAIL'}, {'employee_id': 2, 'source_salary': None, 'target_salary': None, 'status': 'FAIL'}, {'employee_id': 6, 'source_salary': None, 'target_salary': None, 'status': 'FAIL'}], [{'employee_id': 2, 'source_hire_date': None, 'target_hire_date': None, 'status': 'FAIL'}, {'employee_id': 6, 'source_hire_date': None, 'target_hire_date': None, 'status': 'FAIL'}]]
+
