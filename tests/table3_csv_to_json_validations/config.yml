@@ -1,0 +1,30 @@
+source:
+  type: 'csv'
+  schema: 'Y'
+  pyspark_transformed: 'Y'
+  path: "C:\\Users\\mahen\\PycharmProjects\\Pytest\\mahender_pytest_project\\input_files\\table3.csv"
+  options:
+    header: True
+    inferschema: True
+    sep: '|'
+
+target:
+  type: 'json'
+  schema: 'N'
+  pyspark_transformed: 'N'
+  path: "C:\\Users\\mahen\\PycharmProjects\\Pytest\\mahender_pytest_project\\input_files\\Complex2.json"
+  options:
+    multiline: True
+
+validations:
+  count_check:
+    key_col: ['number']
+  duplicate_check:
+    key_col: ['number']
+  uniqueness_check:
+    key_col: ['number','age']
+  null_check:
+    key_col: [ 'number','age' ]
+  data_compare_check:
+    key_col: [ 'age']
+

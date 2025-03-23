@@ -1,0 +1,12 @@
+validation_type:count_check
+status:PASS
+deatils:source_count:5 and target_count:5
+
+validation_type:records_only_in_source
+status:PASS
+deatils:[]
+
+validation_type:records_only_in_target
+status:PASS
+deatils:[]
+

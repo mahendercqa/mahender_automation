@@ -1,0 +1,37 @@
+source:
+  type: 'csv'
+  schema: 'Y'
+  pyspark_transformed: 'Y'
+  path: "C:\\Users\\mahen\\PycharmProjects\\Pytest\\mahender_pytest_project\\input_files\\source_file.csv"
+  options:
+    header: True
+    inferschema: True
+    sep: ','
+
+target:
+  type: 'database'
+  schema: 'N'
+  cred_lookup: 'postgres'
+  table: 'employee'
+  sql_query: 'N'
+
+#target:
+#  type: 'database'
+#  schema: 'N'
+#  cred_lookup: 'postgres'
+#  table: 'employee'
+#  sql_query: 'N'
+
+
+validations:
+  count_check:
+    key_col: ['employee_id']
+  duplicate_check:
+    key_col: ['employee_id']
+  uniqueness_check:
+    key_col: ['employee_id','salary']
+  null_check:
+    key_col: [ 'employee_id','salary' ]
+  data_compare_check:
+    key_col: [ 'employee_id']
+

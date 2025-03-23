@@ -1,0 +1,43 @@
+{
+  "oracle_db_test": {
+    "url": "jdbc:oracle:thin:@localhost:1521:ORCL",
+    "user": "scott",
+    "password": "tiger",
+    "driver": "oracle.jdbc.driver.OracleDriver"
+  },
+
+  "postgres": {
+    "url": "jdbc:postgresql://localhost:5432/postgres",
+    "user": "postgres",
+    "password": "postgres",
+    "driver": "org.postgresql.Driver"
+  },
+    "sqlserver_db": {
+    "url": "jdbc:sqlserver://;serverName=katsreen100.database.windows.net;databaseName=sampledb",
+    "user": "katsreen100",
+    "password": "Dharmavaram1@",
+    "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+  },
+"snowflake_db_1": {
+    "driver": "net.snowflake.client.jdbc.SnowflakeDriver",
+    "jdbc_url": "jdbc:snowflake://gryzysc-de38647.snowflakecomputing.com/?user=MC&password=WZ98vXyNeK,%p4D&warehouse=COMPUTE_WH&db=MAHENDER&schema=TEST"
+  },
+
+  "adls":
+  {
+    "adls_account_name" : "juneauto",
+    "adls_container_name" : "project1",
+    "key" : "CBmVs+pWVKG5ClkNH8I2ooZN5ZTHBECr+Bmf2DQCV+Hj8py1Hfa51CcZ703YkIzKFHsKOsnIkdGZ+AStdaF/kQ=="
+
+  },
+  "snowflake_db": {
+    "driver": "net.snowflake.client.jdbc.SnowflakeDriver",
+    "url": "jdbc:snowflake://gryzysc-de38647.snowflakecomputing.com/",
+    "user": "MC",
+    "password": "WZ98vXyNeK,%p4D",
+    "warehouse": "COMPUTE_WH",
+    "db": "MAHENDER",
+    "schema": "TEST",
+    "jdbc_url": "jdbc:snowflake://gryzysc-de38647.snowflakecomputing.com/?user=KSREENIVASULU443&password=Dharmavaram1@&warehouse=COMPUTE_WH&db=DEMO_DB&schema=PUBLIC"
+  }
+}
